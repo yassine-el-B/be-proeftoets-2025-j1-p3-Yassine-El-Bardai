@@ -17,6 +17,7 @@
             <a href="<?= URLROOT; ?>/speakers/index">Overzicht van Speakers</a>
             <a href="<?= URLROOT; ?>/Torens/index">Overzicht van Torens</a>
             <a href="<?= URLROOT; ?>/Bucketlist/index">Bucketlist als ik 30 wordt</a>
+            <a href="<?= URLROOT; ?>/Vulkaan/index">Actiefste Vulkanen</a>
         </div>
         
         <div class="col-2"></div>

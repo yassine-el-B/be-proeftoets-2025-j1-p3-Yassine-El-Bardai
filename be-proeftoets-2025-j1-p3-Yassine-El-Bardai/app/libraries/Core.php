@@ -60,6 +60,11 @@ class Core
             $database = new Database(); // Zorg ervoor dat je een Database-object hebt
             $bucketlistModel = new BucketlistModel($database);
             $this->currentController = new $this->currentController($bucketlistModel);
+        } elseif ($this->currentController == 'Vulkaan') { // Voeg Vulkaan toe
+            require_once '../app/models/VulkaanModel.php';
+            $database = new Database(); // Zorg ervoor dat je een Database-object hebt
+            $vulkaanModel = new VulkaanModel($database);
+            $this->currentController = new $this->currentController($vulkaanModel);
         } else {
             $this->currentController = new $this->currentController();
         }
